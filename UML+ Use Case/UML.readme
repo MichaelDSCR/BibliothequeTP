@@ -1,0 +1,60 @@
+                                +--------------------------------+
+                                |            Auteur              |
+                                +--------------------------------+
+                                | - nom: String                  |
+                                | - prime: boolean               |
+                                +--------------------------------+
+                                | + Auteur(nom:                  |
+                                |   String, prime: boolean)      |
+                                | + getNom(): String             |
+                                | + getPrix(): boolean           |
+                                +--------------------------------+
+
+                                +--------------------------------+
+                                |            Oeuvre              |
+                                +--------------------------------+
+                                | - titre: String                |
+                                | - auteur: Auteur               |
+                                | - langue: String               |
+                                +--------------------------------+
+                                | + Oeuvre(titre:                |
+                                |   String, auteur: Auteur,      |
+                                |   langue: String = "francais") |
+                                | + getTitre(): String           |
+                                | + getAuteur(): Auteur          |
+                                | + getLangue(): String          |
+                                | + afficher(): void             |
+                                +--------------------------------+
+
+                                +--------------------------------+
+                                |          Exemplaire            |
+                                +--------------------------------+
+                                | - oeuvre: Oeuvre               |
+                                +--------------------------------+
+                                | + Exemplaire(oeuvre: Oeuvre)   |
+                                | + Exemplaire(exemplaire:       |
+                                |   Exemplaire)                  |
+                                | + getOeuvre(): Oeuvre          |
+                                | + afficher(): void             |
+                                +--------------------------------+
+
+                                +--------------------------------+
+                                |         Bibliotheque           |
+                                +--------------------------------+
+                                | - nom: String                  |
+                                | - exemplaires:                 |
+                                |   ArrayList<Exemplaire>        |
+                                +--------------------------------+
+                                | + Bibliotheque(nom: String)    |
+                                | + getNom(): String             |
+                                | + getNbExemplaires(): int      |
+                                | + stocker(oeuvre: Oeuvre,      |
+                                |   n: int = 1): void            |
+                                | + listerExemplaires            |
+                                |   (langue: String = ""):       |
+                                |   ArrayList<Exemplaire>        |
+                                | + compterExemplaires           |
+                                |   (oeuvre: Oeuvre): int        |
+                                | + afficherAuteur               |
+                                |   (prix: boolean = true): void |
+                                +--------------------------------+
